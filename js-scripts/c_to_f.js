@@ -14,7 +14,7 @@ function celsiusToFahrenheit(celsius) {
 }
 
 function main() {
-  const increment = 2.5;
+  const increment = 3.0;
   const lowerBound = 0.0;
   const upperBound = 300.0;
 
