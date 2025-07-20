@@ -4,15 +4,6 @@
  *
  */
 
-function celsiusToFahrenheit(celsius) {
-  const fahrenheit = (celsius * 9.0) / 5.0 + 32.0;
-
-  console.log(
-    `${celsius.toString().padStart(3)} c\t=\t${fahrenheit.toFixed(1).padStart(6)} f`,
-  );
-  return fahrenheit;
-}
-
 function main() {
   const increment = 3.0;
   const lowerBound = 0.0;
@@ -25,6 +16,16 @@ function main() {
   for (let c = lowerBound; c <= upperBound; c += increment) {
     celsiusToFahrenheit(c);
   }
+}
+
+function celsiusToFahrenheit(celsius) {
+  const fahrenheit = (celsius * 9.0) / 5.0 + 32.0;
+
+  console.log(
+    `${celsius.toString().padStart(3)} c\t=\t${fahrenheit.toFixed(1).padStart(6)} f`,
+  );
+
+  return fahrenheit;
 }
 
 main();
